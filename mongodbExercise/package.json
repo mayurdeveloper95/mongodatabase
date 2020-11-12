@@ -1,0 +1,25 @@
+{
+  "name": "mongodbexercise",
+  "version": "1.0.0",
+  "description": "\"mongodb exercise\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayurdeveloper95/mongodatabase.git"
+  },
+  "keywords": [
+    "\"mongodb\""
+  ],
+  "author": "mayur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayurdeveloper95/mongodatabase/issues"
+  },
+  "homepage": "https://github.com/mayurdeveloper95/mongodatabase#readme",
+  "dependencies": {
+    "mongoose": "^5.10.13"
+  }
+}
