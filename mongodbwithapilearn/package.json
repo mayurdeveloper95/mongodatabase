@@ -1,0 +1,31 @@
+{
+  "name": "mongodbwithapilearn",
+  "version": "1.0.0",
+  "description": "\"mongodb database with api\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayurdeveloper95/mongodatabase.git"
+  },
+  "keywords": [
+    "\"mongodb",
+    "rest",
+    "api\""
+  ],
+  "author": "mayur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayurdeveloper95/mongodatabase/issues"
+  },
+  "homepage": "https://github.com/mayurdeveloper95/mongodatabase#readme",
+  "dependencies": {
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "mongoose": "^5.10.14",
+    "nodemon": "^2.0.6"
+  }
+}
