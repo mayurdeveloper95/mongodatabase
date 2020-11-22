@@ -3,6 +3,7 @@ let Joi=require('joi');
 let route=express.Router();
 let Customer=require('../schema/customer.schema');
 let Music=require('../schema/music.schema');
+let Fawn=require('fawn');
 
 route.post("/customer",async(req,res)=>
 {
@@ -21,10 +22,27 @@ let createCustomer=new Customer.CustomerModel({
         noStocks:music.noStocks
     }
 });
+try {
+ new Fawn.Task()
+                .save("customers",createCustomer)
+                .update("musics",{_id:music._id},{
+                    $inc:{
+                        noStocks:-1
+                    }
+                })
+                .run();   
+res.send({message:"music data added",createCustomer});
+} 
+catch (error) {
+    return res.status(500).send({message:"internal server error"});
+}
+
+/*
 let music1=await createCustomer.save();
 music.noStocks--;
 await music.save();
 res.send({message:"music data added",music1});
+*/
 });
 
 
@@ -38,4 +56,4 @@ function validateError(error)
     return schema.validate(error);
 }
 
-module.exports=route;
+module.exports =route;
