@@ -1,0 +1,31 @@
+{
+  "name": "dbrealtionship",
+  "version": "1.0.0",
+  "description": "db realtionship",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayurdeveloper95/mongodatabase.git"
+  },
+  "keywords": [
+    "mongodb",
+    "relationship",
+    "rest",
+    "api"
+  ],
+  "author": "mayur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayurdeveloper95/mongodatabase/issues"
+  },
+  "homepage": "https://github.com/mayurdeveloper95/mongodatabase#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "mongoose": "^5.10.15",
+    "nodemon": "^2.0.6"
+  }
+}
