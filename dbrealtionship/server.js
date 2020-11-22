@@ -4,9 +4,11 @@ let app=express();
 app.use(express.json());
 let Genre=require("./routes/genre");
 let Music=require("./routes/music");
+let Customer=require("./routes/customer")
 
 app.use("/api",Genre);
 app.use("/api",Music);
+app.use("/api",Customer);
 
 //db connection
 mongoose.connect("mongodb://localhost:27017/firstDb",{ useNewUrlParser: true ,useUnifiedTopology: true })
